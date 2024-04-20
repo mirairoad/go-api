@@ -1,0 +1,45 @@
+# Binaries, plugins, libs
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Build artifacts
+**/dist
+**/build
+**/_output
+**/vendor
+
+# Dependency directories
+vendor/
+Godeps/
+
+# IDEs and editors
+/.idea
+*.iml
+*.ipr
+*.iws
+*.suo
+*.sln*
+*.user
+*.userosscache
+*.appveyor.yml
+*.vscode
+
+# Log files
+*.log
+
+# Testing
+*.test
+*.cache
+
+# Dev
+.dev
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
