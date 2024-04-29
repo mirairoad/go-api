@@ -1,20 +1,22 @@
 package authentication
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func Create() {
+func CreateToken() {
 	fmt.Println("user-creates")
 }
 
-func Find() {
+func GetEntity() {
 	fmt.Println("user-services")
 }
 
-func Get() {
+func GetProfile() {
 	fmt.Println("user-services")
 }
 
-func Patch() {
+func Redirect() {
 	fmt.Println("user-services")
 }
 

@@ -12,6 +12,7 @@ type Environment struct {
 	Host     string
 	Port     string
 	MongoUri string
+	DbName   string
 }
 
 func LoadEnv() *Environment {
@@ -25,10 +26,12 @@ func LoadEnv() *Environment {
 	host := os.Getenv("GO_HOST")
 	port := os.Getenv("GO_PORT")
 	mongoUri := os.Getenv("GO_MONGO_URI")
+	dbName := os.Getenv("GO_MONGO_DB")
 	return &Environment{
 		Host:     host,
 		Port:     port,
 		Protocol: protocol,
 		MongoUri: mongoUri,
+		DbName:   dbName,
 	}
 }
